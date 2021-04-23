@@ -9,11 +9,21 @@ categories:
 tags:
   - relational_data
   - joins
-description: 'Relational data and join types.'
+description: 'Relational data and join types'
 ---
 
-<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
+<p>Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you'll need to join multiple data sets together.</p>
+<p>Imagine that you are analyzing your last year's worth of exercise data from your fitbit. You notice that the graph of time you spend with an elevated heart rate each week looks like a camel's back (a binomial distribution) and wonder why. In statistical terms, you're now searching for the <strong>independent</strong> variable(s) to explain the variation in your time spent exercising. &quot;Independent&quot; because there could be other variables, such as the amount of water you drank per week, that may correlate with your exercising, but your hydration doesn't <em>explain</em> why you exercised more or less in a given week. That's because it's probably <strong>dependent</strong> on the amount that you worked out. In other words, you drink more water when you're exercising.</p>
+<p>Analyzing the exercise duration graph some more, you realize that the two peaks are in the middle of spring and fall. You decide that it might have something to do with the weather conditions, especially since you prefer to run outdoors. <em>Still, you're not sure how much it has to do with the weather, and which conditions affect you the most, e.g. temperature, humidity, or cloud cover.</em></p>
+<p>You export your fitbit data to a flat file, and download a table of historical weather data. If you could match up the rows from the two data sets, you'd be able to plot your exercise times against the weather data to see if anything changes in a tight pattern with your exercise times, implying a statistical relationship. <em>You just need a way to join the data sets together such that you have a single data set where each row is a single week, with your exercise times and the weather conditions for that week.</em></p>
+<p>In this article we're talking about the concept of relational data and how to use it to assimilate your data for analaysis.</p>
+<hr />
+<p>Let's make this problem more real with some example data. <em>See the corresponding Github pages for a description of each data set. </em></p>
+<ul>
+<li>Exercise times from Fitbit</li>
+<li>Historical weather conditions for Tulsa</li>
+</ul>
 <p>This article will be about the different types of joins, as well as the concept of relational data.</p>
 <p>It will feature a shiny app to demonstrate joins visually with reactable tables</p>

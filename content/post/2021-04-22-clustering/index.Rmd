@@ -12,6 +12,10 @@ tags:
   - classification
   - shiny
   - exploratory_data_analysis
-description: '"Cain\'t nobody do it like my clique" - Big Sean'
+description: "\"Can't nobody do it like my clique\" - Big Sean"
 ---
+
+shiny app that iterates through k-means clustering
+
+refresher on euclidean distance
 
