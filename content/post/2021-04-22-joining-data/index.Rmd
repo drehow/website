@@ -9,9 +9,10 @@ categories:
 tags:
   - relational_data
   - joins
-description: 'Relational data and join types'
+description: "When joining data on a date column, timing is key"
 ---
 
+### Introduction
 Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you'll need to join multiple data sets together. 
 
 Imagine that you are analyzing your last year's worth of exercise data from your fitbit. You notice that the graph of time you spend with an elevated heart rate each week looks like a camel's back (a binomial distribution) and wonder why. In statistical terms, you're now searching for the **independent** variable(s) to explain the variation in your time spent exercising. "Independent" because there could be other variables, such as the amount of water you drank per week, that may correlate with your exercising, but your hydration doesn't *explain* why you exercised more or less in a given week. That's because it's probably **dependent** on the amount that you worked out. In other words, you drink more water when you're exercising. 
@@ -20,10 +21,35 @@ Analyzing the exercise duration graph some more, you realize that the two peaks 
 
 You export your fitbit data to a flat file, and download a table of historical weather data. If you could match up the rows from the two data sets, you'd be able to plot your exercise times against the weather data to see if anything changes in a tight pattern with your exercise times, implying a statistical relationship. *You just need a way to join the data sets together such that you have a single data set where each row is a single week, with your exercise times and the weather conditions for that week.*
 
-In this article we're talking about the concept of relational data and how to use it to assimilate your data for analaysis. 
+In this article we're talking about the concept of relational data and how to use it to assimilate your data for analysis. 
 
 ***
 
+### Relational Data
+
+```{r, echo=F, message=F, warning=F}
+library(reactable)
+library(kableExtra)
+df1 <- data.frame('key1' = c('A','B','C','D'),
+                  'x1' = c(105,976.2,NA,716)
+)
+df2 <- data.frame('key2' = c('A','B','D','E','F'),
+                  'x2' = c(1,1,0,1,0)
+)
+
+kable(df1) %>%
+  kable_styling(full_width = F, position = 'float_left')  %>%
+   add_header_above(c("Table 1" = 2))
+
+kable(df2) %>%
+  kable_styling(full_width = F, position = 'center')  %>%
+   add_header_above(c("Table 2" = 2))
+
+```
+
+***
+
+### Example Analysis
 Let's make this problem more real with some example data. *See the corresponding Github pages for a description of each data set. *
 
   * Exercise times from Fitbit
