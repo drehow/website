@@ -12,6 +12,33 @@
     
     
     <item>
+      <title>classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clustering</title>
+      <link>/tags/clustering/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/clustering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exploratory_data_analysis</title>
+      <link>/tags/exploratory_data_analysis/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/exploratory_data_analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>joins</title>
       <link>/tags/joins/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
@@ -26,6 +53,24 @@
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/relational_data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unsupervised_learning</title>
+      <link>/tags/unsupervised_learning/</link>
+      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unsupervised_learning/</guid>
       <description></description>
     </item>
     

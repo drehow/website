@@ -8,7 +8,27 @@
   </url>
   
   <url>
+    <loc>/tags/classification/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/22/clustering/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/clustering/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploratory_data_analysis/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,7 +63,17 @@
   </url>
   
   <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/unsupervised_learning/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   

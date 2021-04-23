@@ -12,7 +12,6 @@ tags:
   - classification
   - shiny
   - exploratory_data_analysis
-description: '"Ain\t nobody f------ with my clique" - Big Sean'
+description: '"Cain\'t nobody do it like my clique" - Big Sean'
 ---
 
-LO L
