@@ -1,0 +1,9 @@
+---
+title: Filtering Data (R & Excel examples)
+author: Drew
+date: '2021-04-25'
+slug: filtering-data-r-excel-examples
+categories: []
+tags: []
+description: ''
+---
