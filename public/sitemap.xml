@@ -3,8 +3,193 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2021/04/25/bayesian-logic/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/conditionals-with-r/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/custom-functions-for-repetitive-tasks/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/data-literacy/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data_literacy/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data_science/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/decision-trees/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/exploratory-data-analysis/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/exploratory-data-analysis-excel-example/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/exploratory-data-analysis-r-example/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/filtering-data-r-excel-examples/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/grouping-data/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ide/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/intro_to_ds/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/iteration-with-r/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/linear-regression-overview/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/logistic-regression/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/model-evaluation-calculating-error-rates/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/moving-average-models/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/moving-data-with-r/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/naive-bayes-classifiers/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/overview-of-artificial-neural-networks/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/random-forest/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scripting/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/statistically-summarizing-data/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/support-vector-machines/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/time-series-forecasting-model-survey/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/using-r-for-visualizations/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/variation-and-covariation/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/visualizing-data/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/what-is-an-ide-rstudio/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/25/what-makes-up-a-line/</loc>
+    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +208,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/exploratory_data_analysis/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/intro_to_ds/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,27 +223,12 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/relational_data/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/shiny/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   

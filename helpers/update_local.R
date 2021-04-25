@@ -6,3 +6,5 @@ update_local <- function(){
   blogdown::hugo_build()
   blogdown::serve_site()
 }
+
+# update_local()

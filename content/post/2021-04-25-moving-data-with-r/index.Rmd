@@ -1,0 +1,9 @@
+---
+title: Moving Data with R
+author: Drew
+date: '2021-04-25'
+slug: moving-data-with-r
+categories: []
+tags: []
+description: ''
+---
