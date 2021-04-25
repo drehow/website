@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Joining Data</title>
-        <meta name="description" content="Relational data and join types.">
+        <meta name="description" content="When joining data on a date column, timing is key">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.72.0" />
@@ -77,7 +77,7 @@
         <header class="post-header">
     <h1 class="post-title" itemprop="name headline">Joining Data</h1>
     
-        <p class="post-description" itemprop="description">Relational data and join types.</p>
+        <p class="post-description" itemprop="description">When joining data on a date column, timing is key</p>
     
     <p class="post-date post-line">
         <span>Published <time datetime="2021-04-22" itemprop="datePublished">Thu, Apr 22, 2021</time></span>
@@ -96,10 +96,146 @@
 
     
 <script src="/2021/04/22/joining-data/index_files/header-attrs/header-attrs.js"></script>
+<script src="/2021/04/22/joining-data/index_files/kePrint/kePrint.js"></script>
 
 
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you’ll need to join multiple data sets together.</p>
+<p>Imagine that you are analyzing your last year’s worth of exercise data from your fitbit. You notice that the graph of time you spend with an elevated heart rate each week looks like a camel’s back (a binomial distribution) and wonder why. In statistical terms, you’re now searching for the <strong>independent</strong> variable(s) to explain the variation in your time spent exercising. “Independent” because there could be other variables, such as the amount of water you drank per week, that may correlate with your exercising, but your hydration doesn’t <em>explain</em> why you exercised more or less in a given week. That’s because it’s probably <strong>dependent</strong> on the amount that you worked out. In other words, you drink more water when you’re exercising.</p>
+<p>Analyzing the exercise duration graph some more, you realize that the two peaks are in the middle of spring and fall. You decide that it might have something to do with the weather conditions, especially since you prefer to run outdoors. <em>Still, you’re not sure how much it has to do with the weather, and which conditions affect you the most, e.g. temperature, humidity, or cloud cover.</em></p>
+<p>You export your fitbit data to a flat file, and download a table of historical weather data. If you could match up the rows from the two data sets, you’d be able to plot your exercise times against the weather data to see if anything changes in a tight pattern with your exercise times, implying a statistical relationship. <em>You just need a way to join the data sets together such that you have a single data set where each row is a single week, with your exercise times and the weather conditions for that week.</em></p>
+<p>In this article we’re talking about the concept of relational data and how to use it to assimilate your data for analysis.</p>
+<hr />
+</div>
+<div id="relational-data" class="section level3">
+<h3>Relational Data</h3>
+<table class="table" style="width: auto !important; float: left; margin-right: 10px;">
+<thead>
+<tr>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Table 1
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+key1
+</th>
+<th style="text-align:right;">
+x1
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:right;">
+105.0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:right;">
+976.2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+C
+</td>
+<td style="text-align:right;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+716.0
+</td>
+</tr>
+</tbody>
+</table>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="border-bottom:hidden; padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2">
+<div style="border-bottom: 1px solid #ddd; padding-bottom: 5px; ">
+Table 2
+</div>
+</th>
+</tr>
+<tr>
+<th style="text-align:left;">
+key2
+</th>
+<th style="text-align:right;">
+x2
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+A
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+B
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+D
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+E
+</td>
+<td style="text-align:right;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+F
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="example-analysis" class="section level3">
+<h3>Example Analysis</h3>
+<p>Let’s make this problem more real with some example data. <em>See the corresponding Github pages for a description of each data set. </em></p>
+<ul>
+<li>Exercise times from Fitbit</li>
+<li>Historical weather conditions for Tulsa</li>
+</ul>
 <p>This article will be about the different types of joins, as well as the concept of relational data.</p>
 <p>It will feature a shiny app to demonstrate joins visually with reactable tables</p>
+</div>
 
 </div>
 
