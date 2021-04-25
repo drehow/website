@@ -1,0 +1,12 @@
+---
+title: Data Literacy
+author: Drew
+date: '2021-04-25'
+slug: data-literacy
+categories:
+  - Intro_to_DS
+tags:
+  - data_science
+  - data_literacy
+description: ''
+---

@@ -1,0 +1,18 @@
+---
+title: Why Data Science?
+author: Drew
+date: '2021-04-25'
+slug: why-data-science
+categories:
+  - data_science
+tags:
+  - data_science
+description: ''
+---
+
+When you're an analyst, the fundamental basis of your job is to search for truth and then convey your interpretation of the evidence, with as little bias or subjectivity as possible. 
+
+So much of our world exists without a reference point, e.g. how to survive retirement when it's 2008 and your whole pension just disappeared, raise a child, navigate grief, help an addict, or make a career pivot. 
+
+It's incredibly gratifying to translate numbers and information to meaning, and to do it in a way that is provable, reproducible, and inarguable. 
+
