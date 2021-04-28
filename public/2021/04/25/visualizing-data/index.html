@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Visualizing Data</title>
-        <meta name="description" content="">
+        <meta name="description" content="You are herePackages“In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.72.0" />
@@ -93,9 +93,290 @@
     
 
     
+<script src="/2021/04/25/visualizing-data/index_files/header-attrs/header-attrs.js"></script>
 
 
+<hr />
+<div id="you-are-here" class="section level3">
+<h3>You are here</h3>
+<p><img src="programGraphic_visualize.jpg" /></p>
+<hr />
+</div>
+<div id="packages" class="section level3">
+<h3>Packages</h3>
+<blockquote>
+<p>“In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.”
+- Hadley Wickham, “R Packages”</p>
+</blockquote>
+<p><img src="JPEG_CraftsmanAnalogy.jpg" /></p>
+<p>So let’s install our first package, the one we will be using for visualizations in R: ggplot2.</p>
+<pre class="r"><code># install.packages(&#39;ggplot2&#39;)</code></pre>
+<p>And now that it is installed, let’s load all of its functions into our R session.</p>
+<pre class="r"><code>library(ggplot2)</code></pre>
+<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 3.6.3</code></pre>
+</div>
+<div id="your-first-graph-in-r" class="section level3">
+<h3>Your first graph in R</h3>
+<pre class="r"><code># visualize the first few rows of the mpg data set
+head(mpg)</code></pre>
+<pre><code>## # A tibble: 6 x 11
+##   manufacturer model displ  year   cyl trans      drv     cty   hwy fl    class 
+##   &lt;chr&gt;        &lt;chr&gt; &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt;      &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; 
+## 1 audi         a4      1.8  1999     4 auto(l5)   f        18    29 p     compa~
+## 2 audi         a4      1.8  1999     4 manual(m5) f        21    29 p     compa~
+## 3 audi         a4      2    2008     4 manual(m6) f        20    31 p     compa~
+## 4 audi         a4      2    2008     4 auto(av)   f        21    30 p     compa~
+## 5 audi         a4      2.8  1999     6 auto(l5)   f        16    26 p     compa~
+## 6 audi         a4      2.8  1999     6 manual(m5) f        18    26 p     compa~</code></pre>
+<pre class="r"><code># now graph hwy against displ
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = hwy))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Cute! Take a photo and send it to your fam.</p>
+</div>
+<div id="a-graphing-template" class="section level3">
+<h3>A graphing template</h3>
+<p><img src="graphingTemplate.jpg" /></p>
+<p>Here is a cheat sheet for some of the other popular geom functions you can use (read, “other popular types of charts you can make”).</p>
+<p><a href="https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot2 Cheat Sheet</a></p>
+</div>
+<div id="the-nyt-coronavirus-data" class="section level3">
+<h3>The NYT Coronavirus Data</h3>
+<p>Let’s see if we can use this template to visualize some of the COVID data we worked with last week.</p>
+<p>First, we need to read the data into our R session. Don’t worry about the mechanics of this yet - we’ll get to it later.</p>
+<pre class="r"><code>if (!require(readr)) install.packages(&#39;readr&#39;)</code></pre>
+<pre><code>## Loading required package: readr</code></pre>
+<pre><code>## Warning: package &#39;readr&#39; was built under R version 3.6.3</code></pre>
+<pre class="r"><code>library(readr)
 
+covidData &lt;- read_csv(&#39;https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   date = col_date(format = &quot;&quot;),
+##   state = col_character(),
+##   fips = col_character(),
+##   cases = col_double(),
+##   deaths = col_double()
+## )</code></pre>
+<p>Looks like it read in fine. Now let’s filter out everything but Oklahoma.</p>
+<pre class="r"><code>covidData_OK &lt;- covidData[covidData$state == &#39;Oklahoma&#39;,]
+
+ggplot(data = covidData_OK) + 
+  geom_line(mapping = aes(x = date, y = cases))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>There’s some cleaning to be done here, but we’ll learn how to do that later.</p>
+<p>Let’s compare it to New York.</p>
+<pre class="r"><code>covidData_NY &lt;- covidData[covidData$state == &#39;New York&#39;,]
+
+ggplot(data = covidData_NY) + 
+  geom_line(mapping = aes(x = date, y = cases))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<pre class="r"><code>covidData_yesterday &lt;- covidData[covidData$date == as.character(Sys.Date()-1),]
+ggplot(data = covidData_yesterday) + 
+  geom_point(mapping = aes(x = cases, y = deaths)) + 
+  geom_smooth(mapping = aes(x = cases, y = deaths))</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 3.6.3</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>covidData_yesterdayNoNY &lt;- covidData_yesterday %&gt;% filter(state != &#39;New York&#39;)
+
+ggplot(data = covidData_yesterdayNoNY) + 
+  geom_point(mapping = aes(x = cases, y = deaths)) + 
+  geom_smooth(mapping = aes(x = cases, y = deaths))</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39; and formula &#39;y ~ x&#39;</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-7-2.png" width="672" />
+There’s a weird outlier way above 30k deaths. Curious what state that is.</p>
+<pre class="r"><code>covidData_yesterday[covidData_yesterday$deaths&gt;30000,]</code></pre>
+<pre><code>## # A tibble: 4 x 5
+##   date       state      fips    cases deaths
+##   &lt;date&gt;     &lt;chr&gt;      &lt;chr&gt;   &lt;dbl&gt;  &lt;dbl&gt;
+## 1 2021-04-25 California 06    3731677  61434
+## 2 2021-04-25 Florida    12    2208576  34847
+## 3 2021-04-25 New York   36    2029307  51471
+## 4 2021-04-25 Texas      48    2874344  50103</code></pre>
+<p>Wonder where OK is on the graph…</p>
+<pre class="r"><code>covidData_yesterday[covidData_yesterday$state==&#39;Oklahoma&#39;,]</code></pre>
+<pre><code>## # A tibble: 1 x 5
+##   date       state    fips   cases deaths
+##   &lt;date&gt;     &lt;chr&gt;    &lt;chr&gt;  &lt;dbl&gt;  &lt;dbl&gt;
+## 1 2021-04-25 Oklahoma 40    446550   6716</code></pre>
+<p>So somewhere very close to the origin. Doesn’t necessarily make us safer though, it is likely just because of our relatively small population. NYC has over twice as many people than OK… maybe their situation is worse in part due to the crazy population density there.</p>
+</div>
+<div id="aesthetic-mappings" class="section level3">
+<h3>aesthetic mappings</h3>
+<p>I want to visualize the concentrations of covid by state, which serves to take the differences in populations out of the picture.</p>
+<pre class="r"><code>library(readr)
+library(dplyr)
+stPops &lt;- read_csv(&#39;https://raw.githubusercontent.com/drehow/CSC-201/master/2020_Fall/20200821_Analytics%20with%20Excel_2/nst-est2019-alldata.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   .default = col_double(),
+##   SUMLEV = col_character(),
+##   REGION = col_character(),
+##   DIVISION = col_character(),
+##   STATE = col_character(),
+##   NAME = col_character()
+## )</code></pre>
+<pre><code>## See spec(...) for full column specifications.</code></pre>
+<pre class="r"><code>stPops &lt;- stPops[-c(1:5,nrow(stPops)),] %&gt;% select(NAME, POPESTIMATE2019)
+
+covidData &lt;- left_join(covidData,stPops, by = c(&#39;state&#39;=&#39;NAME&#39;))
+
+covidData$per100k &lt;- round(covidData$cases / covidData$POPESTIMATE2019 * 10000,2)
+covidData &lt;- covidData[!is.na(covidData$per100k),]</code></pre>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_point(mapping = aes(x = date, y = per100k
+                          #, group = state, color = state
+                          ))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<pre class="r"><code> votes &lt;- read_csv(&#39;https://raw.githubusercontent.com/drehow/CSC-201/master/2020_Fall/20200824_Beginning%20with%20R%20...%20Visualizing%20Data/1976-2016-president.csv&#39;)</code></pre>
+<pre><code>## Parsed with column specification:
+## cols(
+##   year = col_double(),
+##   state = col_character(),
+##   state_po = col_character(),
+##   state_fips = col_double(),
+##   state_cen = col_double(),
+##   state_ic = col_double(),
+##   office = col_character(),
+##   candidate = col_character(),
+##   party = col_character(),
+##   writein = col_logical(),
+##   candidatevotes = col_double(),
+##   totalvotes = col_double(),
+##   version = col_double(),
+##   notes = col_logical()
+## )</code></pre>
+<pre class="r"><code>library(scales)</code></pre>
+<pre><code>## Warning: package &#39;scales&#39; was built under R version 3.6.3</code></pre>
+<pre><code>## 
+## Attaching package: &#39;scales&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:readr&#39;:
+## 
+##     col_factor</code></pre>
+<pre class="r"><code>library(tidyr)</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 3.6.3</code></pre>
+<pre class="r"><code>votes &lt;- votes %&gt;% 
+  filter(year == 2016, writein == F, (candidate == &#39;Trump, Donald J.&#39; &amp; party ==&#39;republican&#39;) | (candidate == &#39;Clinton, Hillary&#39; &amp; party==&#39;democrat&#39;)) %&gt;%
+  select(state, party, candidatevotes) %&gt;%
+  spread(party, candidatevotes, fill=NA) 
+
+votes &lt;- votes %&gt;% 
+  mutate(voted = ifelse(votes$democrat &gt; votes$republican,&#39;democrat&#39;,&#39;republican&#39;)) %&gt;% 
+  select(state, voted)
+
+covidData &lt;- left_join(covidData, votes)</code></pre>
+<pre><code>## Joining, by = &quot;state&quot;</code></pre>
+<pre class="r"><code>covidData$population &lt;- covidData$POPESTIMATE2019
+covidData$POPESTIMATE2019 &lt;- NULL
+
+ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state, color = voted))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<pre class="r"><code> ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population
+                          ))+
+   labs(title=&quot;COVID Cases by State&quot;, subtitle=&quot;Data as of 8/25/2020&quot;, y=&quot;Cases per 100k People&quot;, x=&quot;Date (2020)&quot;, caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) </code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population
+                          ))+
+   labs(title=&quot;COVID Cases by State&quot;, subtitle=&quot;Data as of 8/25/2020&quot;, y=&quot;Cases per 100k People&quot;, x=&quot;Date (2020)&quot;, caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) +
+    scale_alpha_continuous(labels = comma) </code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-5.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population
+                          ))+
+  labs(title=&quot;COVID Cases by State&quot;, subtitle=&quot;Data as of 8/25/2020&quot;, y=&quot;Cases per 100k People&quot;, x=&quot;Date (2020)&quot;, caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) +
+  scale_alpha_continuous(labels = comma) +
+  scale_x_date(date_breaks = &quot;1 month&quot;,
+                labels = date_format(&quot;%B&quot;),
+                limits = as.Date(c(&#39;2020-03-15&#39;,&#39;2020-08-23&#39;)))</code></pre>
+<pre><code>## Warning: Removed 13181 row(s) containing missing values (geom_path).</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-6.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population
+                          ))+
+  labs(title=&quot;COVID Cases by State&quot;, subtitle=&quot;Data as of 8/25/2020&quot;, y=&quot;Cases per 100k People&quot;, x=&quot;Date (2020)&quot;, caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) +
+  scale_alpha_continuous(labels = comma) +
+  scale_x_date(date_breaks = &quot;1 month&quot;,
+                labels = date_format(&quot;%B&quot;),
+                limits = as.Date(c(&#39;2020-03-15&#39;,&#39;2020-08-23&#39;))) +
+  theme(legend.position = c(0.11, 0.67))</code></pre>
+<pre><code>## Warning: Removed 13181 row(s) containing missing values (geom_path).</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-7.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = state
+                          , color = voted, alpha = population
+                          ))+
+  labs(title=&quot;COVID Cases by State&quot;, subtitle=&quot;Data as of 8/25/2020&quot;, y=&quot;Cases per 100k People&quot;, x=&quot;Date (2020)&quot;, caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) +
+  scale_alpha_continuous(labels = comma) +
+  scale_x_date(date_breaks = &quot;1 month&quot;,
+                labels = date_format(&quot;%B&quot;),
+                limits = as.Date(c(&#39;2020-03-15&#39;,&#39;2020-08-23&#39;))) +
+  theme_classic() +
+  theme(legend.position = c(0.11, 0.67))</code></pre>
+<pre><code>## Warning: Removed 13181 row(s) containing missing values (geom_path).</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-8.png" width="672" /></p>
+<pre class="r"><code>ggplot(data = covidData) + 
+  geom_line(mapping = aes(x = date, 
+                          y = per100k, 
+                          group = state
+                          , color = voted, 
+                          alpha = population
+                          )) + 
+  scale_alpha_continuous(labels = comma) +
+  scale_x_date(date_breaks = &quot;1 month&quot;,
+                labels = date_format(&quot;%B&quot;),
+                limits = as.Date(c(&#39;2020-03-15&#39;,&#39;2020-08-23&#39;))) +
+  scale_color_manual(values=c(&#39;#002fd9&#39;,&#39;#d90000&#39;)) +
+  labs(title=&quot;COVID Cases by State&quot;, 
+      subtitle=&quot;Data as of 8/25/2020&quot;, 
+      y=&quot;Cases per 100k People&quot;, 
+      x=&quot;Date (2020)&quot;, 
+      caption=&quot;Sources: New York Times, U.S. Census Bureau, Harvard Dataverse&quot;) +
+  theme_classic() +
+  theme(legend.position = c(0.11, 0.67))</code></pre>
+<pre><code>## Warning: Removed 13181 row(s) containing missing values (geom_path).</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-9.png" width="672" /></p>
+<pre class="r"><code>covidData_party &lt;- covidData %&gt;% group_by(date, voted) %&gt;% summarise(per100k = mean(per100k))</code></pre>
+<pre><code>## `summarise()` regrouping output by &#39;date&#39; (override with `.groups` argument)</code></pre>
+<pre class="r"><code>ggplot(data = covidData_party) + 
+  geom_line(mapping = aes(x = date, y = per100k, group = voted, color = voted))</code></pre>
+<p><img src="/2021/04/25/visualizing-data/index_files/figure-html/unnamed-chunk-12-10.png" width="672" />
+* shape
+* color
+* size
+* fill
+* linetype
+* lineend
+* label
+* family (font)
+* fontface</p>
+</div>
+<div id="geom_functions---cheat-sheet" class="section level3">
+<h3>geom_functions - cheat sheet</h3>
+</div>
 
 </div>
 

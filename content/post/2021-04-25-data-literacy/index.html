@@ -11,6 +11,363 @@ tags:
 description: ''
 ---
 
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
-
+<div id="intro" class="section level3">
+<h3>Intro</h3>
+<p>Data is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what’s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight. Our first step into this valuable process begins with Data Literacy.</p>
+<p>Class Objective:</p>
+<ul>
+<li>To build a working knowledge about data as a concept, which will serve as the basis of the rest of the course.</li>
+<li>To gain a comprehension of data in its different forms and contexts</li>
+</ul>
+<blockquote>
+<p>“Data literacy includes the ability to read, work with, analyze and argue with data as part of a larger inquiry process. Reading data involves understanding what data is, and what aspects of the world it represents. Working with data involves acquiring, cleaning, and managing it. Analyzing data involves filtering, sorting, aggregating, comparing, and performing other such analytic operations on it. Arguing with data involves using data to support a larger narrative intended to communicate some message to a particular audience.”
+<a href="http://ci-journal.net/index.php/ciej/article/view/1294/1229">D’Ignazio, Bhargava</a></p>
+</blockquote>
+</div>
+<div id="what-does-data-look-like" class="section level3">
+<h3>What does data look like?</h3>
+<p>Data comes different shapes, sizes, formats, and structures. The most defining feature of a data set is whether or not it is structured at all. The <a href="https://en.wikipedia.org/wiki/Unstructured_data#:~:text=In%201998%2C%20Merrill%20Lynch%20said,higher%20percentages%20of%20unstructured%20data.">majority of data that exists is unstructured</a>, but it requires time and skill to bring it into a format that is analyzable. In this course, we will focus our attention solely on structured data.</p>
+<ul>
+<li><a href="https://treehousetechgroup.com/8-examples-of-unstructured-data/">Unstructured Data</a>
+<ul>
+<li>Business documents</li>
+<li>Audio files</li>
+<li>Webpages</li>
+<li>Video files</li>
+<li>Open-ended survey responses</li>
+<li>Messaging apps</li>
+<li>Medical records</li>
+</ul></li>
+<li>Structured Data (i.e., the colloquial “spreadsheet”)
+<ul>
+<li>Structured data sets are tabular (think “like a <a href="https://en.wikipedia.org/wiki/Table_(information)">table</a>”). They’re already organized into rows and columns. Below are some ubiquitous examples of structured data sets.</li>
+</ul></li>
+</ul>
+<hr />
+<center>
+<img src="email.PNG" title="fig:" alt="FigName" />
+</center>
+<p style="text-align: center;">
+My email inbox, which shows the sender, subject, beginning of the message content, and date/time of receipt.
+</p>
+<hr />
+<center>
+<img src="spotify.JPG" title="fig:" alt="FigName" />
+</center>
+<p style="text-align: center;">
+Spotify, showing Track Title, Explicit Y/N, Artist(s), Album Title, when I saved the track, and the track length (M:SS)
+</p>
+<hr />
+<center>
+<img src="files.JPG" title="fig:" alt="FigName" />
+</center>
+<p style="text-align: center;">
+A file explorer window, showing file name, data modified, file type, and size
+</p>
+<hr />
+<ul>
+<li><p>What do all these have in common? The characteristics of tabular data are:</p>
+<ul>
+<li>They consists of rows and columns. For instance, each song or email message or file is a row. Each of their characteristics—the song title, the message subject, the file name—is a column.</li>
+<li>Each row has the same columns as the other rows, in the same order.</li>
+<li>A given column has the same type, but different columns can have different types. For instance, an email message has a sender’s name, which is a string; a subject line, which is a string; a sent date, which is a date; whether it’s been read, which is a Boolean; and so on.</li>
+<li>There should only be one value per cell</li>
+<li>The rows are usually in some particular order. For instance, the emails are ordered by which was most recently sent.</li>
+</ul></li>
+</ul>
+</div>
+<div id="anatomy-of-structured-data" class="section level3">
+<h3>Anatomy of Structured Data</h3>
+<p>Start with one of R’s example data sets, <a href="https://rpubs.com/neros/61800">mtcars</a>.</p>
+<pre class="r"><code>data(&quot;mtcars&quot;)
+knitr::kable(head(mtcars,10))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">mpg</th>
+<th align="right">cyl</th>
+<th align="right">disp</th>
+<th align="right">hp</th>
+<th align="right">drat</th>
+<th align="right">wt</th>
+<th align="right">qsec</th>
+<th align="right">vs</th>
+<th align="right">am</th>
+<th align="right">gear</th>
+<th align="right">carb</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mazda RX4</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.620</td>
+<td align="right">16.46</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Mazda RX4 Wag</td>
+<td align="right">21.0</td>
+<td align="right">6</td>
+<td align="right">160.0</td>
+<td align="right">110</td>
+<td align="right">3.90</td>
+<td align="right">2.875</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+<tr class="odd">
+<td align="left">Datsun 710</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">108.0</td>
+<td align="right">93</td>
+<td align="right">3.85</td>
+<td align="right">2.320</td>
+<td align="right">18.61</td>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Hornet 4 Drive</td>
+<td align="right">21.4</td>
+<td align="right">6</td>
+<td align="right">258.0</td>
+<td align="right">110</td>
+<td align="right">3.08</td>
+<td align="right">3.215</td>
+<td align="right">19.44</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Hornet Sportabout</td>
+<td align="right">18.7</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">175</td>
+<td align="right">3.15</td>
+<td align="right">3.440</td>
+<td align="right">17.02</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Valiant</td>
+<td align="right">18.1</td>
+<td align="right">6</td>
+<td align="right">225.0</td>
+<td align="right">105</td>
+<td align="right">2.76</td>
+<td align="right">3.460</td>
+<td align="right">20.22</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Duster 360</td>
+<td align="right">14.3</td>
+<td align="right">8</td>
+<td align="right">360.0</td>
+<td align="right">245</td>
+<td align="right">3.21</td>
+<td align="right">3.570</td>
+<td align="right">15.84</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">3</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Merc 240D</td>
+<td align="right">24.4</td>
+<td align="right">4</td>
+<td align="right">146.7</td>
+<td align="right">62</td>
+<td align="right">3.69</td>
+<td align="right">3.190</td>
+<td align="right">20.00</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Merc 230</td>
+<td align="right">22.8</td>
+<td align="right">4</td>
+<td align="right">140.8</td>
+<td align="right">95</td>
+<td align="right">3.92</td>
+<td align="right">3.150</td>
+<td align="right">22.90</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Merc 280</td>
+<td align="right">19.2</td>
+<td align="right">6</td>
+<td align="right">167.6</td>
+<td align="right">123</td>
+<td align="right">3.92</td>
+<td align="right">3.440</td>
+<td align="right">18.30</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">4</td>
+<td align="right">4</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Columns = Variables, Features, Factors, Fields</li>
+<li>Rows = Observations, Records, Lines</li>
+<li>Header = Column Names</li>
+<li>Row Names = An index column that comes first in the data set. Usually just in the form of row numbers, but with mtcars, the row names are the actual Make/Model</li>
+</ul>
+</div>
+<div id="approaching-a-data-set" class="section level3">
+<h3>Approaching a Data Set</h3>
+<p>There is a set of a few fundamental questions that you should ask about the data set being observed.</p>
+<ul>
+<li>What is this data about?</li>
+<li>What does one row represent?</li>
+<li>What is the source?</li>
+<li>How was it collected?</li>
+<li>When was it collected, and is it being updated?</li>
+<li>What kind of information do we have about each row?</li>
+<li>To what extent are there missing/null/NA values?</li>
+</ul>
+<p>You might not be able to get answers to all of these questions, but the fact that you aren’t sure on a given question per se should affect your level of skepticism and/or confidence that the data set contains relevant and accurate information that could contribute to your analysis.</p>
+</div>
+<div id="data-types" class="section level3">
+<h3>Data Types</h3>
+<p>One of the characteristics of tabular data listed before is that a column must only have one type of data, but that different columns may have different types of data. This has multiple meanings:</p>
+<ol style="list-style-type: decimal">
+<li>A column about the number of cylinders in the car’s engine shouldn’t also have some numbers describing the number of passengers it can carry. A column should represent one aspect of the rows it describes.</li>
+<li>More technically, a column must have a homogeneous data type.</li>
+</ol>
+<ul>
+<li>The two basic types of data are continuous and discrete.
+<ul>
+<li>Continuous data is numeric. It can be added to or subtracted from. There are theoretically infinite values in a continuous column, only limited by the precision of the measurement.</li>
+<li>Discrete data is categorical. It usually doesn’t make sense to try to add two discrete values within a column. The extent to which math can be performed on a discrete feature is in counting the number of occurrences of each unique value in a discrete column.
+<ul>
+<li>Discrete values may be inherently ordered or not. Dates are discrete and ordered, ethnicities are discrete and can’t be inherently ordered.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p>What types of columns are in the mtcars data set?</p>
+<pre class="r"><code>str(mtcars)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    32 obs. of  11 variables:
+##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...
+##  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...
+##  $ disp: num  160 160 108 258 360 ...
+##  $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...
+##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...
+##  $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...
+##  $ qsec: num  16.5 17 18.6 19.4 17 ...
+##  $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...
+##  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...
+##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...
+##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</code></pre>
+</div>
+<div id="putting-it-all-to-work" class="section level3">
+<h3>Putting it All to Work</h3>
+<p>Now that we are all literate academics, let’s read the Iris data set, another default R example data set.</p>
+<p>Note: With these default R data sets, you can get a lot of information about them with the command <code>?&lt;datasetname&gt;</code>, e.g. <code>?mtcars</code></p>
+<pre class="r"><code>data(&quot;iris&quot;)
+head(iris,15)</code></pre>
+<pre><code>##    Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+## 1           5.1         3.5          1.4         0.2  setosa
+## 2           4.9         3.0          1.4         0.2  setosa
+## 3           4.7         3.2          1.3         0.2  setosa
+## 4           4.6         3.1          1.5         0.2  setosa
+## 5           5.0         3.6          1.4         0.2  setosa
+## 6           5.4         3.9          1.7         0.4  setosa
+## 7           4.6         3.4          1.4         0.3  setosa
+## 8           5.0         3.4          1.5         0.2  setosa
+## 9           4.4         2.9          1.4         0.2  setosa
+## 10          4.9         3.1          1.5         0.1  setosa
+## 11          5.4         3.7          1.5         0.2  setosa
+## 12          4.8         3.4          1.6         0.2  setosa
+## 13          4.8         3.0          1.4         0.1  setosa
+## 14          4.3         3.0          1.1         0.1  setosa
+## 15          5.8         4.0          1.2         0.2  setosa</code></pre>
+<pre class="r"><code>rows &lt;- sample(nrow(iris))
+iris &lt;- iris[rows,]
+head(iris,15)</code></pre>
+<pre><code>##     Sepal.Length Sepal.Width Petal.Length Petal.Width    Species
+## 147          6.3         2.5          5.0         1.9  virginica
+## 114          5.7         2.5          5.0         2.0  virginica
+## 111          6.5         3.2          5.1         2.0  virginica
+## 125          6.7         3.3          5.7         2.1  virginica
+## 47           5.1         3.8          1.6         0.2     setosa
+## 61           5.0         2.0          3.5         1.0 versicolor
+## 32           5.4         3.4          1.5         0.4     setosa
+## 7            4.6         3.4          1.4         0.3     setosa
+## 104          6.3         2.9          5.6         1.8  virginica
+## 42           4.5         2.3          1.3         0.3     setosa
+## 126          7.2         3.2          6.0         1.8  virginica
+## 46           4.8         3.0          1.4         0.3     setosa
+## 67           5.6         3.0          4.5         1.5 versicolor
+## 23           4.6         3.6          1.0         0.2     setosa
+## 83           5.8         2.7          3.9         1.2 versicolor</code></pre>
+<pre class="r"><code>summary(iris)</code></pre>
+<pre><code>##   Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+##  Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+##  1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+##  Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+##  Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+##  3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+##  Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+##        Species  
+##  setosa    :50  
+##  versicolor:50  
+##  virginica :50  
+##                 
+##                 
+## </code></pre>
+<pre class="r"><code>str(iris)</code></pre>
+<pre><code>## &#39;data.frame&#39;:    150 obs. of  5 variables:
+##  $ Sepal.Length: num  6.3 5.7 6.5 6.7 5.1 5 5.4 4.6 6.3 4.5 ...
+##  $ Sepal.Width : num  2.5 2.5 3.2 3.3 3.8 2 3.4 3.4 2.9 2.3 ...
+##  $ Petal.Length: num  5 5 5.1 5.7 1.6 3.5 1.5 1.4 5.6 1.3 ...
+##  $ Petal.Width : num  1.9 2 2 2.1 0.2 1 0.4 0.3 1.8 0.3 ...
+##  $ Species     : Factor w/ 3 levels &quot;setosa&quot;,&quot;versicolor&quot;,..: 3 3 3 3 1 2 1 1 3 1 ...</code></pre>
+<p><br></p>
+<hr />
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>Now we are on the same page about the concept of the word “data” and we can begin communicating! Data Literacy is becoming as critical a skill as the actual ability to read and write in modern society. It’s safe to say that you will spend a significant portion of your life, professional and personal, interacting with and about data, so it’s a non-starter for a person without data literacy skills to collect and discuss any kind of facts conveyed by data. This unfortunate event is what surrounds the idea of “fake news,” for example.</p>
+<blockquote>
+<p>“Without data, you’re just another person with an opinion.”
+- W. Edwards Deming</p>
+</blockquote>
+</div>

@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Filtering Data (R &amp; Excel examples)</title>
-        <meta name="description" content="">
+        <meta name="description" content="Data TransformationAt this point in the class, you should:
+Have run some of the R code I’ve provided and what’s in the textbookPlayed around a little with the ggplot functions to generate your own variations of the graphs you’ve seen so farConducted your own analysis in Excel for Lab 1This is a pretty good list of experiences for a brand new data analyst.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
         <meta name="generator" content="Hugo 0.72.0" />
@@ -93,9 +94,80 @@
     
 
     
+<script src="/2021/04/25/filtering-data-r-excel-examples/index_files/header-attrs/header-attrs.js"></script>
 
 
+<div id="data-transformation" class="section level3">
+<h3>Data Transformation</h3>
+<p>At this point in the class, you should:</p>
+<ul>
+<li>Have run some of the R code I’ve provided and what’s in the textbook</li>
+<li>Played around a little with the ggplot functions to generate your own variations of the graphs you’ve seen so far</li>
+<li>Conducted your own analysis in Excel for Lab 1</li>
+</ul>
+<p>This is a pretty good list of experiences for a brand new data analyst. You have a working knowledge sufficient to take clean, pre-formatted data and derive your own insights from its contents with visualizations. The next topic in the class, <strong>data transformation</strong>, will take your budding analytics skillset and broaden its applicability. Up to this point (in R, at least), you’ve been given the data exactly as you need it to generate a graph. Once you are able to transform data sets, you will be able to generate whatever graph you need, given clean data.</p>
+<p>Use the link below to read about the source data.</p>
+<p><a href="https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-03-10/readme.md">Source Data</a></p>
+<p>The five verbs of dplyr.</p>
+<ol style="list-style-type: decimal">
+<li>filter()</li>
+<li>arrange()</li>
+<li>select()</li>
+<li>mutate()</li>
+<li>summarise()</li>
+</ol>
+<p>All verbs work similarly:</p>
+<ol style="list-style-type: decimal">
+<li>The first argument is a data frame.</li>
+<li>The subsequent arguments describe what to do with the data frame, using the variable names (without quotes).</li>
+<li>The result is a new data frame.</li>
+</ol>
+<p>Let’s start with filtering.</p>
+<pre class="r"><code># Get the Data
 
+tuition_cost &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-10/tuition_cost.csv&#39;)
+
+tuition_income &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-10/tuition_income.csv&#39;) 
+
+salary_potential &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-10/salary_potential.csv&#39;)
+
+historical_tuition &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-10/historical_tuition.csv&#39;)
+
+diversity_school &lt;- readr::read_csv(&#39;https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-03-10/diversity_school.csv&#39;)
+
+# Or read in with tidytuesdayR package (https://github.com/thebioengineer/tidytuesdayR)
+# PLEASE NOTE TO USE 2020 DATA YOU NEED TO USE tidytuesdayR version ? from GitHub
+
+# Either ISO-8601 date or year/week works!
+
+# Install via devtools::install_github(&quot;thebioengineer/tidytuesdayR&quot;)
+
+# tuesdata &lt;- tidytuesdayR::tt_load(&#39;2020-03-10&#39;)
+# tuesdata &lt;- tidytuesdayR::tt_load(2020, week = 11)
+
+
+# tuition_cost &lt;- tuesdata$tuition_cost</code></pre>
+<p>Gather your initial impressions of the data by viewing it in RStudio windows and reading the data set descriptions in the README page on github.</p>
+<p>A lesson on filtering is really a lesson on operators. Since filtering is selecting certain rows based on their values, we need to know how to write our criteria for the values we want and don’t want.</p>
+<p>Logical Operators</p>
+<ul>
+<li><code>&amp;</code></li>
+<li><code>|</code></li>
+<li><code>!</code></li>
+</ul>
+<p>Numerical Operators</p>
+<ul>
+<li><code>&gt;</code></li>
+<li><code>&gt;=</code></li>
+<li><code>&lt;</code></li>
+<li><code>&lt;=</code></li>
+<li><code>!=</code></li>
+<li><code>==</code></li>
+</ul>
+<p><img src="Logical%20Operators.JPG" /></p>
+<pre class="r"><code>library(dplyr)
+t1 &lt;- tuition_income %&gt;% filter(income_lvl==&#39;30,001 to 48,000&#39;, year == 2018)</code></pre>
+</div>
 
 </div>
 
