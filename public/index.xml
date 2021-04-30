@@ -44,7 +44,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/data-literacy/</guid>
-      <description>Intro Data is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
+      <description>IntroData is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
     </item>
     
     <item>
@@ -89,8 +89,8 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/filtering-data-r-excel-examples/</guid>
-      <description>Data Transformation At this point in the class, you should:
- Have run some of the R code I&#39;ve provided and what&#39;s in the textbook Played around a little with the ggplot functions to generate your own variations of the graphs you&#39;ve seen so far Conducted your own analysis in Excel for Lab 1  This is a pretty good list of experiences for a brand new data analyst. You have a working knowledge sufficient to take clean, pre-formatted data and derive your own insights from its contents with visualizations.</description>
+      <description>Data TransformationAt this point in the class, you should:
+Have run some of the R code I&#39;ve provided and what&#39;s in the textbookPlayed around a little with the ggplot functions to generate your own variations of the graphs you&#39;ve seen so farConducted your own analysis in Excel for Lab 1This is a pretty good list of experiences for a brand new data analyst. You have a working knowledge sufficient to take clean, pre-formatted data and derive your own insights from its contents with visualizations.</description>
     </item>
     
     <item>
@@ -234,7 +234,7 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/visualizing-data/</guid>
-      <description>You are here   Packages  &amp;quot;In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.</description>
+      <description>You are herePackages&amp;quot;In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.</description>
     </item>
     
     <item>
@@ -271,7 +271,7 @@ refresher on euclidean distance</description>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/22/joining-data/</guid>
-      <description>Introduction Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you’ll need to join multiple data sets together.
+      <description>IntroductionSometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you’ll need to join multiple data sets together.
 Imagine that you are analyzing your last year’s worth of exercise data from your fitbit.</description>
     </item>
     
@@ -292,7 +292,7 @@ Imagine that you are analyzing your last year’s worth of exercise data from yo
       
       <guid>/about/</guid>
       <description>This is a &amp;ldquo;world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.
-R md b ### not run ss</description>
+R md b### not runss</description>
     </item>
     
   </channel>

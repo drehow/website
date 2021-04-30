@@ -3,7 +3,7 @@ library(blogdown)
 
 update_local <- function(){
   blogdown::stop_server()
-  blogdown::build_site()
+  # blogdown::build_site()
   blogdown::hugo_build()
   blogdown::serve_site()
 }

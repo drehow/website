@@ -14,23 +14,27 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: Home
+    - name: home
       url: /
       weight: 1
-    - name: about
-      url: /about/
-      weight: 5
-    - name: intro to DS
+#    - name: about
+#      url: /about/
+#      weight: 5
+    - name: teaching
       url: /tags/r-markdown/
       weight: 2
     - name: resume
       url: /resume/
-      weight: 3
-    - name: GitHub
-      url: https://github.com/drehow
       weight: 4
+    - name: projects
+      url: https://github.com/drehow
+      weight: 3
+    - name: tags
+      url: /tags/
+      weight: 5
     
 params:
+  description: Welcome! This is a personal site where I keep the articles and web apps that I use to teach my class, as well as some other pet projects. Most of the material is related to data science. Feel free to browse!
   mainSections:
     - post
   intro: true
@@ -50,3 +54,7 @@ params:
     url: logo.png
     width: 50
   colortheme: "dark" # dark, light, white, or classic
+  showAllPostsOnHomePage: false
+  postsOnHomePage: 7
+  tagsOverview: true
+
