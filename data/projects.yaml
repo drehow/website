@@ -1,14 +1,29 @@
 {
    "list": [
       {
-         "name":"Hexo",
-         "url":"https://hexo.io/",
-         "desc":"A fast, simple & powerful blog framework"
+         "name":"CSC-201",
+         "url":"http://fontawesome.io/",
+         "desc":"articles and apps for my class at ORU, \"Intro. to Data Science\""
       },
       {
-         "name":"Font Awesome",
+         "name":"Paper Trading Tool",
+         "url":"https://hexo.io/",
+         "desc":"historically simulate different portfolio strategies"
+      },
+      {
+         "name":"COVID Tracker",
          "url":"http://fontawesome.io/",
-         "desc":"The iconic font and CSS toolkit"
+         "desc":"Because the world needs another one"
+      },
+      {
+         "name":"Personal Financial Reporting Templates",
+         "url":"http://fontawesome.io/",
+         "desc":"templates and descriptions of my system"
+      },
+      {
+         "name":"Puzzles",
+         "url":"http://fontawesome.io/",
+         "desc":"the real reason you're all here"
       }
    ]
 } 

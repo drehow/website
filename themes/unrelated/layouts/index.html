@@ -40,6 +40,7 @@
     
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
     <span class="h2">Topics</span>
+    <a href='/posts/'>All Tags</a>
     <span class="widget tagcloud">
       {{ $AllRegularPagesCount := len .Site.RegularPages }}
       {{ range $elem := .Site.Taxonomies.tags.Alphabetical }}
@@ -48,6 +49,7 @@
       </a>
       {{ end }}
     </span>
+    
     <span class="h2">Most recent posts</span>
     {{ end }}
 
@@ -83,6 +85,7 @@
       {{ end }}
     </ul>
     {{ end }}
+    <a href='/posts/'>All Posts</a>
   </section>
 
   {{ $showProjectsList := false }}
@@ -97,7 +100,7 @@
       {{ $projectsUrl = .Site.Params.projectsUrl }}
     {{ end }}
   <section id="projects">
-    <span class="h1"><a href="{{ $projectsUrl }}">Projects</a></span>
+    <span class="h2">Projects</span>
     <ul class="project-list">
         {{ range .Site.Data.projects.list }}
         <li class="project-item">

@@ -36,11 +36,11 @@ refresher on euclidean distance</description>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/29/ds-section-nav/</guid>
-      <description> The List Here is a list of my articles in the order I would present the concepts in an intro course:
+      <description>The ListHere is a list of my articles in the order I would present the concepts in an intro course:
 Data Literacy - Discussing aspects of data and digital information in general.
- Visualizing Data - How to convey the information you have.
-  For a chronological list of all the data science articles, go here.
- </description>
+Visualizing Data - How to convey the information you have.
+For a chronological list of all the data science articles, go here.
+</description>
     </item>
     
     <item>
@@ -49,7 +49,7 @@ Data Literacy - Discussing aspects of data and digital information in general.
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/data-literacy/</guid>
-      <description>Intro Data is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
+      <description>IntroData is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ Data Literacy - Discussing aspects of data and digital information in general.
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/22/joining-data/</guid>
-      <description>Introduction Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
+      <description>IntroductionSometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
 Imagine that you are analyzing your last year&#39;s worth of exercise data from your fitbit.</description>
     </item>
     
