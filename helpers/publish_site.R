@@ -3,3 +3,5 @@ publish_site <- function(comment) {
   system(paste0('git commit -m "',comment,'"'))
   system('git push origin master')
 }
+
+# publish_site('changing theme name')
