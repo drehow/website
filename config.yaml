@@ -20,21 +20,24 @@ menu:
 #    - name: about
 #      url: /about/
 #      weight: 5
-    - name: teaching
-      url: /tags/r-markdown/
+    - name: data_science
+      url: /2021/04/29/ds-section-nav/
       weight: 2
-    - name: resume
-      url: /resume/
-      weight: 4
-    - name: projects
-      url: https://github.com/drehow
+    - name: professional
+      url: /tags/work/
       weight: 3
+    - name: projects
+      url: /tags/projects/
+      weight: 4
     - name: tags
+      url: /tags/
+      weight: 6
+    - name: puzzles
       url: /tags/
       weight: 5
     
 params:
-  description: Welcome! This is a personal site where I keep the articles and web apps that I use to teach my class, as well as some other pet projects. Most of the material is related to data science. Feel free to browse!
+  description: Welcome! This is a personal site where I keep the articles and web apps that I use to teach my class, as well as my jigsaw puzzling portfolio, etc. Most of the material is related to data science. Feel free to browse!
   mainSections:
     - post
   intro: true

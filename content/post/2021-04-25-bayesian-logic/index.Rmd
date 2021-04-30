@@ -4,6 +4,8 @@ author: Drew
 date: '2021-04-25'
 slug: bayesian-logic
 categories: []
-tags: []
+tags: 
+  - data_science
 description: ''
+weight: 2
 ---

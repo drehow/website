@@ -1,0 +1,20 @@
+---
+title: DS Section Nav
+author: ''
+date: '2021-04-29'
+slug: ds-section-nav
+categories:
+  - data_science
+tags:
+  - data_science
+---
+
+## The List
+Here is a list of my articles in the order I would present the concepts in an intro course:
+
+  1. **[Data Literacy](/2021/04/25/data-literacy/)** - Discussing aspects of data and digital information in general. 
+  
+  2. **[Visualizing Data](/tags/)** - How to convey the information you have.
+  
+  
+*For a chronological list of all the data science articles, [go here.](/tags/data_science/)*

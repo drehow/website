@@ -9,6 +9,7 @@ categories:
 tags:
   - relational_data
   - joins
+  - data_science
 description: "When joining data on a date column, timing is key"
 ---
 
