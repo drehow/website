@@ -3,13 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2021/04/22/clustering/</loc>
+    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2021/04/25/bayesian-logic/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data_science/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data_science/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/04/29/ds-section-nav/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,17 +68,7 @@
   </url>
   
   <url>
-    <loc>/tags/data_science/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2021/04/25/decision-trees/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -123,11 +148,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/r/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
@@ -154,11 +174,6 @@
   
   <url>
     <loc>/2021/04/25/support-vector-machines/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -194,11 +209,6 @@
   
   <url>
     <loc>/tags/classification/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2021/04/22/clustering/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   

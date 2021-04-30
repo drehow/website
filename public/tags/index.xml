@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>data_science</title>
+      <link>/tags/data_science/</link>
+      <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data_science/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data_literacy</title>
@@ -17,15 +26,6 @@
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/data_literacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>data_science</title>
-      <link>/tags/data_science/</link>
-      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/data_science/</guid>
       <description></description>
     </item>
     
