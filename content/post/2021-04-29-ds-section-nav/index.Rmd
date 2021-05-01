@@ -9,12 +9,26 @@ tags:
   - data_science
 ---
 
-## The List
-Here is a list of my articles in the order I would present the concepts in an intro course:
+Here is a list of my data science articles in the order I would present the concepts to someone who is unfamiliar with data science.
 
-  1. **[Data Literacy](/2021/04/25/data-literacy/)** - Discussing aspects of data and digital information in general. 
-  
-  2. **[Visualizing Data](/tags/)** - How to convey the information you have.
+## Data Science Articles
+
+  * **[Data Literacy](/2021/04/25/data-literacy/)** - Discussing aspects of data and digital information in general
+  * **[Visualizing Data](/tags/)** - How to convey quantitative information
+  * **[Clustering](/tags/)** - Reveal the inherent "cliques" of rows within your data set
+  * **[The K-means Algorithm](/tags/)** - Step-by-step visualizations of the algorithm at work
+  * **[Joining Data](/tags/)** - Methods for joining different data sets into one
+  * **[Bayesianism](/tags/)** - Why is Thomas Bayes such a big deal?
+  * **[Conditionals in R](/tags/)** - If this, then that.
+  * **[Custom Functions in R](/tags/)** - Packaging code for easier developing
+  * **[Decision Trees](/tags/)** - A relatively simple and effective classification model
+  * **[Exploratory Data Analysis](/tags/pathToOtherArticlesAboutThis)** - How to get to know a data set
+  * **[Filtering Data](/tags/)** - R and Excel explanations of logic-based filtering
+  * **[Summarizing Data](/tags/)** - Group similar rows together to get the big picture
+  * **[Iteration (Loops) in R](/tags/)** - apply more complicated maneuvers by iterating
+  * **[A Linear Regression Primer](/tags/)** - A brief look at the grandfather model
+  * **[Logistic Regression](/tags/)** - A surprisingly effective, super fast classifier
+  * **[Model Evaluation Metrics](/tags/)** - Different perspectives on "good"
   
   
 *For a chronological list of all the data science articles, [go here.](/tags/data_science/)*
