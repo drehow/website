@@ -1,0 +1,10 @@
+---
+title: CSC-201
+author: ''
+date: '2021-05-01'
+slug: csc-201
+categories: []
+tags: []
+---
+
+Links to lecture notes and apps, maybe tools for the labs and projects?

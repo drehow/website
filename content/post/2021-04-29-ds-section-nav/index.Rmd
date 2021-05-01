@@ -9,26 +9,37 @@ tags:
   - data_science
 ---
 
-Here is a list of my data science articles in the order I would present the concepts to someone who is unfamiliar with data science.
+Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
 
 ## Data Science Articles
 
-  * **[Data Literacy](/2021/04/25/data-literacy/)** - Discussing aspects of data and digital information in general
-  * **[Visualizing Data](/tags/)** - How to convey quantitative information
-  * **[Clustering](/tags/)** - Reveal the inherent "cliques" of rows within your data set
-  * **[The K-means Algorithm](/tags/)** - Step-by-step visualizations of the algorithm at work
-  * **[Joining Data](/tags/)** - Methods for joining different data sets into one
-  * **[Bayesianism](/tags/)** - Why is Thomas Bayes such a big deal?
-  * **[Conditionals in R](/tags/)** - If this, then that.
-  * **[Custom Functions in R](/tags/)** - Packaging code for easier developing
-  * **[Decision Trees](/tags/)** - A relatively simple and effective classification model
-  * **[Exploratory Data Analysis](/tags/pathToOtherArticlesAboutThis)** - How to get to know a data set
+  * **[Data Literacy](/2021/04/25/data-literacy/)** - discussing aspects of data and digital information in general
+  * **[Visualizing Data](/tags/)** - how to convey quantitative information
+  * **[Clustering](/tags/)** - reveal the inherent "cliques" of rows within your data set
+  * **[The K-means Algorithm](/tags/)** - step-by-step visualizations of the algorithm at work
+  * **[Joining Data](/tags/)** - methods for joining different data sets into one
+  * **[Bayesianism](/tags/)** - why is Thomas Bayes such a big deal?
+  * **[Conditionals in R](/tags/)** - if this, then that.
+  * **[Custom Functions in R](/tags/)** - packaging code for easier developing
+  * **[Decision Trees](/tags/)** - a staightforward and effective classification model
+  * **[Exploratory Data Analysis](/tags/pathToOtherArticlesAboutThis)** - how to get to know a data set
   * **[Filtering Data](/tags/)** - R and Excel explanations of logic-based filtering
-  * **[Summarizing Data](/tags/)** - Group similar rows together to get the big picture
+  * **[Summarizing Data](/tags/)** - group similar rows together to get the big picture
   * **[Iteration (Loops) in R](/tags/)** - apply more complicated maneuvers by iterating
-  * **[A Linear Regression Primer](/tags/)** - A brief look at the grandfather model
-  * **[Logistic Regression](/tags/)** - A surprisingly effective, super fast classifier
-  * **[Model Evaluation Metrics](/tags/)** - Different perspectives on "good"
-  
+  * **[A Linear Regression Primer](/tags/)** - a brief look at the grandfather model
+  * **[Logistic Regression](/tags/)** - a surprisingly effective, super fast classifier
+  * **[Model Evaluation Metrics](/tags/)** - different perspectives on "good"
+  * **[Moving Averages](/tags/)** - a basic method for smoothing out some noise
+  * **[Moving Data with R](/tags/)** - file types, paths, import and export functions
+  * **[Why Data Science?](/tags/)** - my pitch for data science to college students
+  * **[What makes a line?](/tags/)** - decomposing time series plots
+  * **[Variation](/tags/)** - a fundamental statistical principle
+  * **[Covariation](/tags/)** - are we related?
+  * **[Time Series Forecasting](/tags/)** - forecasting based on the shape of the line
+  * **[Support Vector Machines](/tags/)** - workhorse supervised ML algorithm
+  * **[Summary Statistics](/tags/)** - setting the stage for EDA
+  * **[Random Forests](/tags/)** - the more the merrier
+  * **[Artificial Nerual Networks](/tags/)** - basic intro to a new level of complexity
+  * **[Naive Bayes Classifiers](/tags/)** - bayesianism applied to machine learning
   
 *For a chronological list of all the data science articles, [go here.](/tags/data_science/)*

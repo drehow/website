@@ -1,0 +1,10 @@
+---
+title: Puzzles
+author: ''
+date: '2021-05-01'
+slug: puzzles
+categories: []
+tags: []
+---
+
+Nav page for jigsaw puzzles. Need to upload pics of puzzles into individual posts

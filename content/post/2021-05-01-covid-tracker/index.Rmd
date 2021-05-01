@@ -1,0 +1,15 @@
+---
+title: COVID Tracker
+author: ''
+date: '2021-05-01'
+slug: covid-tracker
+categories: []
+tags:
+  - apps
+  - dashboard
+  - covid
+  - shiny
+  - exploratory_data_analysis
+---
+
+iframe for covid tracker
