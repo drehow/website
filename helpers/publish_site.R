@@ -4,4 +4,4 @@ publish_site <- function(comment) {
   system('git push origin master')
 }
 
-# publish_site('changing theme name')
+# publish_site('closing off 404 holes')
