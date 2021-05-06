@@ -1,0 +1,11 @@
+name: covid_tracker
+title:
+username:
+account: drew-howell
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4068265
+bundleId: 4548571
+url: https://drew-howell.shinyapps.io/covid_tracker/
+when: 1620014759.25674
+lastSyncTime: 1620014759.25675

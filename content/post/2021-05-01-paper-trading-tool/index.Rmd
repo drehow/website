@@ -1,0 +1,15 @@
+---
+title: Paper Trading Tool
+author: ''
+date: '2021-05-01'
+slug: paper-trading-tool
+categories: []
+tags:
+  - apps
+  - investing
+  - finance
+---
+
+Description and instructions
+
+iframe for app

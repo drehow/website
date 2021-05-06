@@ -6,10 +6,91 @@
     <description>Recent content in Tags on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>apps</title>
+      <link>/tags/apps/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/apps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>covid</title>
+      <link>/tags/covid/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/covid/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboard</title>
+      <link>/tags/dashboard/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>exploratory_data_analysis</title>
+      <link>/tags/exploratory_data_analysis/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/exploratory_data_analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>finance</title>
+      <link>/tags/finance/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>google_sheets</title>
+      <link>/tags/google_sheets/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google_sheets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>investing</title>
+      <link>/tags/investing/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/investing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal_finance</title>
+      <link>/tags/personal_finance/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/personal_finance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shiny/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>data_science</title>
@@ -75,15 +156,6 @@
     </item>
     
     <item>
-      <title>exploratory_data_analysis</title>
-      <link>/tags/exploratory_data_analysis/</link>
-      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/exploratory_data_analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>joins</title>
       <link>/tags/joins/</link>
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
@@ -98,15 +170,6 @@
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/relational_data/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>shiny</title>
-      <link>/tags/shiny/</link>
-      <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     

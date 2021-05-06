@@ -6,7 +6,7 @@
     <description>Recent content in exploratory_data_analysis on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/exploratory_data_analysis/index.xml" rel="self" type="application/rss+xml" />
     
@@ -19,6 +19,16 @@
       <guid>/2021/04/22/clustering/</guid>
       <description>shiny app that iterates through k-means clustering
 refresher on euclidean distance</description>
+    </item>
+    
+    <item>
+      <title>COVID Tracker</title>
+      <link>/2021/05/01/covid-tracker/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/covid-tracker/</guid>
+      <description> iframe for covid tracker
+ </description>
     </item>
     
   </channel>

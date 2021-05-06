@@ -2,27 +2,27 @@
    "list": [
       {
          "name":"CSC-201",
-         "url":"http://fontawesome.io/",
+         "url":"/2021/05/01/csc-201/",
          "desc":"articles and apps for my class at ORU, \"Intro. to Data Science\""
       },
       {
          "name":"Paper Trading Tool",
-         "url":"https://hexo.io/",
+         "url":"/2021/05/01/paper-trading-tool/",
          "desc":"historically simulate different portfolio strategies"
       },
       {
          "name":"COVID Tracker",
-         "url":"http://fontawesome.io/",
+         "url":"/2021/05/01/covid-tracker/",
          "desc":"Because the world needs another one"
       },
       {
          "name":"Personal Financial Reporting Templates",
-         "url":"http://fontawesome.io/",
+         "url":"/2021/05/01/personal-financial-reporting-templates/",
          "desc":"templates and descriptions of my system"
       },
       {
          "name":"Puzzles",
-         "url":"http://fontawesome.io/",
+         "url":"/2021/05/01/puzzles/",
          "desc":"the real reason you're all here"
       }
    ]
