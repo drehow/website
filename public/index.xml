@@ -6,7 +6,7 @@
     <description>Recent content on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,16 +31,69 @@ refresher on euclidean distance</description>
     </item>
     
     <item>
+      <title>COVID Tracker</title>
+      <link>/2021/05/01/covid-tracker/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/covid-tracker/</guid>
+      <description> iframe for covid tracker
+ </description>
+    </item>
+    
+    <item>
+      <title>CSC-201</title>
+      <link>/2021/05/01/csc-201/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/csc-201/</guid>
+      <description>Links to lecture notes and apps, maybe tools for the labs and projects?</description>
+    </item>
+    
+    <item>
+      <title>Paper Trading Tool</title>
+      <link>/2021/05/01/paper-trading-tool/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/paper-trading-tool/</guid>
+      <description>Description and instructions
+iframe for app</description>
+    </item>
+    
+    <item>
+      <title>Personal Financial Reporting Templates</title>
+      <link>/2021/05/01/personal-financial-reporting-templates/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/personal-financial-reporting-templates/</guid>
+      <description>links and descriptions to the google sheets templates</description>
+    </item>
+    
+    <item>
+      <title>Professional Summary</title>
+      <link>/2021/05/01/professional-summary/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/professional-summary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Puzzles</title>
+      <link>/2021/05/01/puzzles/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/puzzles/</guid>
+      <description>Nav page for jigsaw puzzles. Need to upload pics of puzzles into individual posts</description>
+    </item>
+    
+    <item>
       <title>DS Section Nav</title>
       <link>/2021/04/29/ds-section-nav/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/29/ds-section-nav/</guid>
-      <description> The List Here is a list of my articles in the order I would present the concepts in an intro course:
-Data Literacy - Discussing aspects of data and digital information in general.
- Visualizing Data - How to convey the information you have.
-  For a chronological list of all the data science articles, go here.
- </description>
+      <description>Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
+Data Science Articles  Data Literacy - discussing aspects of data and digital information in general Visualizing Data - how to convey quantitative information Clustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data set The K-means Algorithm - step-by-step visualizations of the algorithm at work Joining Data - methods for joining different data sets into one Bayesianism - why is Thomas Bayes such a big deal?</description>
     </item>
     
     <item>

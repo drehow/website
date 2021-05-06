@@ -17,11 +17,8 @@
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/29/ds-section-nav/</guid>
-      <description> The List Here is a list of my articles in the order I would present the concepts in an intro course:
-Data Literacy - Discussing aspects of data and digital information in general.
- Visualizing Data - How to convey the information you have.
-  For a chronological list of all the data science articles, go here.
- </description>
+      <description>Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
+Data Science Articles  Data Literacy - discussing aspects of data and digital information in general Visualizing Data - how to convey quantitative information Clustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data set The K-means Algorithm - step-by-step visualizations of the algorithm at work Joining Data - methods for joining different data sets into one Bayesianism - why is Thomas Bayes such a big deal?</description>
     </item>
     
   </channel>

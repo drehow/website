@@ -13,6 +13,96 @@
   </url>
   
   <url>
+    <loc>/tags/apps/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/covid/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/covid-tracker/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/csc-201/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dashboard/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploratory_data_analysis/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/finance/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google_sheets/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/investing/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/paper-trading-tool/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/personal-financial-reporting-templates/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/personal_finance/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/professional-summary/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/01/puzzles/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shiny/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
@@ -28,22 +118,7 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2021/04/29/ds-section-nav/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,11 +293,6 @@
   </url>
   
   <url>
-    <loc>/tags/exploratory_data_analysis/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2021/04/22/joining-data/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
@@ -234,11 +304,6 @@
   
   <url>
     <loc>/tags/relational_data/</loc>
-    <lastmod>2021-04-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/shiny/</loc>
     <lastmod>2021-04-22T00:00:00+00:00</lastmod>
   </url>
   

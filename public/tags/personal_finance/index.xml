@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal_finance on Drew Howell</title>
+    <link>/tags/personal_finance/</link>
+    <description>Recent content in personal_finance on Drew Howell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/personal_finance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Personal Financial Reporting Templates</title>
+      <link>/2021/05/01/personal-financial-reporting-templates/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/01/personal-financial-reporting-templates/</guid>
+      <description>links and descriptions to the google sheets templates</description>
+    </item>
+    
+  </channel>
+</rss>
