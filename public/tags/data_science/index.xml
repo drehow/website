@@ -6,7 +6,7 @@
     <description>Recent content in data_science on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data_science/index.xml" rel="self" type="application/rss+xml" />
     
@@ -31,13 +31,51 @@ refresher on euclidean distance</description>
     </item>
     
     <item>
+      <title>Randomness is the Stock Market</title>
+      <link>/2021/05/06/randomness-is-the-stock-market/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/randomness-is-the-stock-market/</guid>
+      <description>Stock markets behave in opposite ways depending on whether you’re perspective is micro- or macroscopic. It’s easy to forecast that our economy will be bigger in the distant future than it is now, but difficult to estimate where it will be in a month. As a result, it’s harder to trade profitable options than it is to make profitable long-term trades in index funds. This article explores the different levels of randomness you get from highly observed stock indexes depending on the length of time under scrutiny.</description>
+    </item>
+    
+    <item>
+      <title>Student Opinion Survey Analysis</title>
+      <link>/2021/05/06/student-opinion-survey-analysis/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
+      <description>library(grid)library(gridExtra)library(ggplot2)## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3library(tidyr)## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3library(RColorBrewer) library(reactable)## Warning: package &amp;#39;reactable&amp;#39; was built under R version 3.6.3files &amp;lt;- list.files(&amp;#39;sos&amp;#39;)options &amp;lt;- c(&amp;#39;Strongly disagree&amp;#39;, &amp;#39;Disagree&amp;#39;, &amp;#39;Neutral&amp;#39;, &amp;#39;Agree&amp;#39;, &amp;#39;Strongly agree&amp;#39;)y=1j=5for(y in 1:length(files)){doc &amp;lt;- readLines(paste0(&amp;#39;sos/&amp;#39;,files[y]))prompts &amp;lt;- doc[grep(&amp;#39;Strongly agree&amp;#39;, doc) - 1]results &amp;lt;- data.</description>
+    </item>
+    
+    <item>
+      <title>Text Parsing with R</title>
+      <link>/2021/05/06/text-parsing-with-r/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/text-parsing-with-r/</guid>
+      <description>Talk about the text parsing functions. gsub, grepl, grep
+workflow: filenames, doc, looping, cleaning, output
+use the sos data as an example, maybe grab an innocuous one from work</description>
+    </item>
+    
+    <item>
+      <title>My Experience of Data Science in Finance</title>
+      <link>/2021/05/05/data-science-in-finance/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/05/data-science-in-finance/</guid>
+      <description>My Experience of Data Science in BankingMy first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model. Looking back, it was a ridiculous ask for my skillset at the time -- just finished a master&#39;s in data science, no finance background, and prepayment modelling is one of the biggest quantitative challenges in the fixed-income industry -- but my boss at least seemed to view the results as more helpful than not, so I moved on.</description>
+    </item>
+    
+    <item>
       <title>DS Section Nav</title>
       <link>/2021/04/29/ds-section-nav/</link>
       <pubDate>Thu, 29 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/29/ds-section-nav/</guid>
       <description>Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
-Data Science Articles  Data Literacy - discussing aspects of data and digital information in general Visualizing Data - how to convey quantitative information Clustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data set The K-means Algorithm - step-by-step visualizations of the algorithm at work Joining Data - methods for joining different data sets into one Bayesianism - why is Thomas Bayes such a big deal?</description>
+Data Science ArticlesData Literacy - discussing aspects of data and digital information in generalVisualizing Data - how to convey quantitative informationClustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data setThe K-means Algorithm - step-by-step visualizations of the algorithm at workJoining Data - methods for joining different data sets into oneBayesianism - why is Thomas Bayes such a big deal?</description>
     </item>
     
     <item>
@@ -46,7 +84,7 @@ Data Science Articles  Data Literacy - discussing aspects of data and digital in
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/data-literacy/</guid>
-      <description>Intro Data is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
+      <description>IntroData is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
     </item>
     
     <item>
@@ -55,7 +93,7 @@ Data Science Articles  Data Literacy - discussing aspects of data and digital in
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/22/joining-data/</guid>
-      <description>Introduction Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
+      <description>IntroductionSometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
 Imagine that you are analyzing your last year&#39;s worth of exercise data from your fitbit.</description>
     </item>
     

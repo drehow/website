@@ -34,7 +34,7 @@ menu:
 #      weight: 5
     
 params:
-  description: Welcome! This is a personal site where I keep the articles and web apps that I use to teach my class, as well as a few pet projects and my jigsaw puzzle portfolio... Most of the material is related to data science. Feel free to browse!
+  description: Welcome! This is a personal site where I host my apps, articles, some pet projects, and my jigsaw puzzle portfolio... Most of the material is related to data science. Feel free to browse!
   mainSections:
     - post
   intro: true

@@ -6,10 +6,19 @@
     <description>Recent content in data_science on Drew Howell</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/data_science/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Experience of Data Science in Finance</title>
+      <link>/2021/05/05/data-science-in-finance/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/05/data-science-in-finance/</guid>
+      <description>My Experience of Data Science in BankingMy first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model. Looking back, it was a ridiculous ask for my skillset at the time -- just finished a master&#39;s in data science, no finance background, and prepayment modelling is one of the biggest quantitative challenges in the fixed-income industry -- but my boss at least seemed to view the results as more helpful than not, so I moved on.</description>
+    </item>
     
     <item>
       <title>DS Section Nav</title>
@@ -18,7 +27,7 @@
       
       <guid>/2021/04/29/ds-section-nav/</guid>
       <description>Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
-Data Science Articles  Data Literacy - discussing aspects of data and digital information in general Visualizing Data - how to convey quantitative information Clustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data set The K-means Algorithm - step-by-step visualizations of the algorithm at work Joining Data - methods for joining different data sets into one Bayesianism - why is Thomas Bayes such a big deal?</description>
+Data Science ArticlesData Literacy - discussing aspects of data and digital information in generalVisualizing Data - how to convey quantitative informationClustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data setThe K-means Algorithm - step-by-step visualizations of the algorithm at workJoining Data - methods for joining different data sets into oneBayesianism - why is Thomas Bayes such a big deal?</description>
     </item>
     
   </channel>

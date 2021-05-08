@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>time_series on Drew Howell</title>
+    <link>/tags/time_series/</link>
+    <description>Recent content in time_series on Drew Howell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/time_series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Randomness is the Stock Market</title>
+      <link>/2021/05/06/randomness-is-the-stock-market/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/randomness-is-the-stock-market/</guid>
+      <description>Stock markets behave in opposite ways depending on whether you’re perspective is micro- or macroscopic. It’s easy to forecast that our economy will be bigger in the distant future than it is now, but difficult to estimate where it will be in a month. As a result, it’s harder to trade profitable options than it is to make profitable long-term trades in index funds. This article explores the different levels of randomness you get from highly observed stock indexes depending on the length of time under scrutiny.</description>
+    </item>
+    
+  </channel>
+</rss>

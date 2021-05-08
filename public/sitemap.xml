@@ -13,6 +13,91 @@
   </url>
   
   <url>
+    <loc>/tags/cleaning/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data_science/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploratory_data_analysis/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/finance/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/06/randomness-is-the-stock-market/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scripting/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/06/student-opinion-survey-analysis/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/06/text-parsing-with-r/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/text_parsing/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/time_series/</loc>
+    <lastmod>2021-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data_science/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/finance/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2021/05/05/data-science-in-finance/</loc>
+    <lastmod>2021-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/apps/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -34,21 +119,6 @@
   
   <url>
     <loc>/tags/dashboard/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/exploratory_data_analysis/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/finance/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -78,11 +148,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/2021/05/01/professional-summary/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
   </url>
@@ -95,26 +160,6 @@
   <url>
     <loc>/tags/shiny/</loc>
     <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2021-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/data_science/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/data_science/</loc>
-    <lastmod>2021-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -234,11 +279,6 @@
   
   <url>
     <loc>/tags/rstudio/</loc>
-    <lastmod>2021-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/scripting/</loc>
     <lastmod>2021-04-25T00:00:00+00:00</lastmod>
   </url>
   

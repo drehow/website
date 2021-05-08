@@ -4,4 +4,4 @@ publish_site <- function(comment) {
   system('git push origin master')
 }
 
-# publish_site('closing off 404 holes')
+# publish_site('SOS stats')

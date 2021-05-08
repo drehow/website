@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>text_parsing on Drew Howell</title>
+    <link>/tags/text_parsing/</link>
+    <description>Recent content in text_parsing on Drew Howell</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/text_parsing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Student Opinion Survey Analysis</title>
+      <link>/2021/05/06/student-opinion-survey-analysis/</link>
+      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
+      <description>library(grid)library(gridExtra)library(ggplot2)## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3library(tidyr)## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3library(RColorBrewer) library(reactable)## Warning: package &amp;#39;reactable&amp;#39; was built under R version 3.6.3files &amp;lt;- list.files(&amp;#39;sos&amp;#39;)options &amp;lt;- c(&amp;#39;Strongly disagree&amp;#39;, &amp;#39;Disagree&amp;#39;, &amp;#39;Neutral&amp;#39;, &amp;#39;Agree&amp;#39;, &amp;#39;Strongly agree&amp;#39;)y=1j=5for(y in 1:length(files)){doc &amp;lt;- readLines(paste0(&amp;#39;sos/&amp;#39;,files[y]))prompts &amp;lt;- doc[grep(&amp;#39;Strongly agree&amp;#39;, doc) - 1]results &amp;lt;- data.</description>
+    </item>
+    
+  </channel>
+</rss>
