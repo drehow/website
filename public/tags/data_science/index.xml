@@ -45,7 +45,7 @@ refresher on euclidean distance</description>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
-      <description>library(grid)library(gridExtra)library(ggplot2)## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3library(tidyr)## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3library(RColorBrewer) library(reactable)## Warning: package &amp;#39;reactable&amp;#39; was built under R version 3.6.3files &amp;lt;- list.files(&amp;#39;sos&amp;#39;)options &amp;lt;- c(&amp;#39;Strongly disagree&amp;#39;, &amp;#39;Disagree&amp;#39;, &amp;#39;Neutral&amp;#39;, &amp;#39;Agree&amp;#39;, &amp;#39;Strongly agree&amp;#39;)y=1j=5for(y in 1:length(files)){doc &amp;lt;- readLines(paste0(&amp;#39;sos/&amp;#39;,files[y]))prompts &amp;lt;- doc[grep(&amp;#39;Strongly agree&amp;#39;, doc) - 1]results &amp;lt;- data.</description>
+      <description>## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;reactable&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;htmltools&amp;#39; was built under R version 3.6.3## Warning in readLines(paste0(&amp;quot;sos/&amp;quot;, files[y])): incomplete final line found on## &amp;#39;sos/202005.txt&amp;#39;## Warning in readLines(paste0(&amp;quot;sos/&amp;quot;, files[y])): incomplete final line found on## &amp;#39;sos/202012.</description>
     </item>
     
     <item>
