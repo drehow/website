@@ -33,9 +33,9 @@ options(reactable.theme = reactableTheme(
 ))
  
 BuYlRd <- function(x) rgb(colorRamp(c("#7fb7d7", "#ffffbf", "#fc8d59"))(x), maxColorValue = 255)
-bar_chart <- function(label, width = "100%", height = "16px", fill = "#00bfc4", background = "#1d1f21") {
+bar_chart <- function(label, width = "100%", height = "24px", fill = "#00bfc4", background = "#1d1f21") {
     bar <- div(style = list(background = fill, width = width, height = height))
-    chart <- div(style = list(flexGrow = 1, marginLeft = "2px", background = background), bar)
+    chart <- div(style = list(flexGrow = 1, marginLeft = "1px", background = background), bar)
     div(style = list(display = "flex", alignItems = "center"), chart)
 }
 
