@@ -17,7 +17,8 @@
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
-      <description>## Warning: package &amp;#39;ggplot2&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;tidyr&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;reactable&amp;#39; was built under R version 3.6.3## Warning: package &amp;#39;htmltools&amp;#39; was built under R version 3.6.3## Warning in readLines(paste0(&amp;quot;sos/&amp;quot;, files[y])): incomplete final line found on## &amp;#39;sos/202005.txt&amp;#39;## Warning in readLines(paste0(&amp;quot;sos/&amp;quot;, files[y])): incomplete final line found on## &amp;#39;sos/202012.</description>
+      <description>Student Opinion AnalysisEnd-of-semester feedback from students in my “Intro to Data Science” course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you’re viewing on a phone, it looks better in landscape.
+{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;prompt&#34;:[&#34;Exams and other means of measuring my performance were relevant to course objectives and course content.</description>
     </item>
     
   </channel>
