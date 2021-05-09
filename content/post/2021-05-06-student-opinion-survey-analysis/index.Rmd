@@ -15,7 +15,7 @@ tags:
 
 End-of-semester feedback from students in my "Intro to Data Science" course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you're viewing on a phone, it looks better in landscape. 
 
-**For 
+**[Here's the script for this table.](https://github.com/drehow/website/blob/master/content/post/2021-05-06-student-opinion-survey-analysis/index.Rmd)**
 
 ```{r, message = F, warnings = F, fig.dim = c(8,3), echo = F}
 options(warn=-1)
