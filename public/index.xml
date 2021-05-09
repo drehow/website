@@ -36,7 +36,7 @@ refresher on euclidean distance</description>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/06/randomness-is-the-stock-market/</guid>
-      <description>Stock markets behave in opposite ways depending on whether you’re perspective is micro- or macroscopic. It’s easy to forecast that our economy will be bigger in the distant future than it is now, but difficult to estimate where it will be in a month. As a result, it’s harder to trade profitable options than it is to make profitable long-term trades in index funds. This article explores the different levels of randomness you get from highly observed stock indexes depending on the length of time under scrutiny.</description>
+      <description>Stock markets behave in opposite ways depending on whether you&#39;re perspective is micro- or macroscopic. It&#39;s easy to forecast that our economy will be bigger in the distant future than it is now, but difficult to estimate where it will be in a month. As a result, it&#39;s harder to trade profitable options than it is to make profitable long-term trades in index funds. This article explores the different levels of randomness you get from highly observed stock indexes depending on the length of time under scrutiny.</description>
     </item>
     
     <item>
@@ -45,8 +45,8 @@ refresher on euclidean distance</description>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
-      <description>Student Opinion AnalysisEnd-of-semester feedback from students in my “Intro to Data Science” course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you’re viewing on a phone, it looks better in landscape.
-{&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;prompt&#34;:[&#34;Exams and other means of measuring my performance were relevant to course objectives and course content.</description>
+      <description>Student Opinion Analysis End-of-semester feedback from students in my &amp;quot;Intro to Data Science&amp;quot; course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you&#39;re viewing on a phone, it looks better in landscape.
+ {&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;prompt&#34;:[&#34;Exams and other means of measuring my performance were relevant to course objectives and course content.</description>
     </item>
     
     <item>
@@ -66,7 +66,7 @@ use the sos data as an example, maybe grab an innocuous one from work</descripti
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/05/data-science-in-finance/</guid>
-      <description>My Experience of Data Science in BankingMy first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model. Looking back, it was a ridiculous ask for my skillset at the time -- just finished a master&#39;s in data science, no finance background, and prepayment modelling is one of the biggest quantitative challenges in the fixed-income industry -- but my boss at least seemed to view the results as more helpful than not, so I moved on.</description>
+      <description>My Experience of Data Science in Banking My first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model. Looking back, it was a ridiculous ask for my skillset at the time -- just finished a master&#39;s in data science, no finance background, and prepayment modelling is one of the biggest quantitative challenges in the fixed-income industry -- but my boss at least seemed to view the results as more helpful than not, so I moved on.</description>
     </item>
     
     <item>
@@ -75,8 +75,8 @@ use the sos data as an example, maybe grab an innocuous one from work</descripti
       <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/01/covid-tracker/</guid>
-      <description>iframe for covid tracker
-</description>
+      <description> iframe for covid tracker
+ </description>
     </item>
     
     <item>
@@ -132,7 +132,7 @@ iframe for app</description>
       
       <guid>/2021/04/29/ds-section-nav/</guid>
       <description>Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
-Data Science ArticlesData Literacy - discussing aspects of data and digital information in generalVisualizing Data - how to convey quantitative informationClustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data setThe K-means Algorithm - step-by-step visualizations of the algorithm at workJoining Data - methods for joining different data sets into oneBayesianism - why is Thomas Bayes such a big deal?</description>
+Data Science Articles  Data Literacy - discussing aspects of data and digital information in general Visualizing Data - how to convey quantitative information Clustering - reveal the inherent &amp;quot;cliques&amp;quot; of rows within your data set The K-means Algorithm - step-by-step visualizations of the algorithm at work Joining Data - methods for joining different data sets into one Bayesianism - why is Thomas Bayes such a big deal?</description>
     </item>
     
     <item>
@@ -159,7 +159,7 @@ Data Science ArticlesData Literacy - discussing aspects of data and digital in
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/data-literacy/</guid>
-      <description>IntroData is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
+      <description>Intro Data is fundamentally different from information, and information is fundamentally different from knowledge. However, they are related in the sense that knowledge is composed of collected information and information is composed of curated and analyzed data. Since data science is defined as the process of extracting value from data, and what&#39;s valuable is knowledge, we can look at data science as the process of turning data into accurate information, and then into knowledge/insight.</description>
     </item>
     
     <item>
@@ -204,8 +204,8 @@ Data Science ArticlesData Literacy - discussing aspects of data and digital in
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/filtering-data-r-excel-examples/</guid>
-      <description>Data TransformationAt this point in the class, you should:
-Have run some of the R code I&#39;ve provided and what&#39;s in the textbookPlayed around a little with the ggplot functions to generate your own variations of the graphs you&#39;ve seen so farConducted your own analysis in Excel for Lab 1This is a pretty good list of experiences for a brand new data analyst. You have a working knowledge sufficient to take clean, pre-formatted data and derive your own insights from its contents with visualizations.</description>
+      <description>Data Transformation At this point in the class, you should:
+ Have run some of the R code I&#39;ve provided and what&#39;s in the textbook Played around a little with the ggplot functions to generate your own variations of the graphs you&#39;ve seen so far Conducted your own analysis in Excel for Lab 1  This is a pretty good list of experiences for a brand new data analyst. You have a working knowledge sufficient to take clean, pre-formatted data and derive your own insights from its contents with visualizations.</description>
     </item>
     
     <item>
@@ -349,7 +349,7 @@ Data Science ArticlesData Literacy - discussing aspects of data and digital in
       <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/25/visualizing-data/</guid>
-      <description>You are herePackages&amp;quot;In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.</description>
+      <description>You are here   Packages  &amp;quot;In R, the fundamental unit of shareable code is the package. A package bundles together code, data, documentation, and tests, and is easy to share with others. As of January 2015, there were over 6,000 packages available on the Comprehensive R Archive Network, or CRAN, the public clearing house for R packages. This huge variety of packages is one of the reasons that R is so successful: the chances are that someone has already solved a problem that you’re working on, and you can benefit from their work by downloading their package.</description>
     </item>
     
     <item>
@@ -376,7 +376,7 @@ Data Science ArticlesData Literacy - discussing aspects of data and digital in
       <pubDate>Thu, 22 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/04/22/joining-data/</guid>
-      <description>IntroductionSometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
+      <description>Introduction Sometimes the goal of an analysis requires you to gather data from different sources. And even when you can get by with only using one souce, it could take the form of several separate Excel spreadsheets from the marketing department, or an enterprise-wide data warehouse, for example. Sooner or later, you&#39;ll need to join multiple data sets together.
 Imagine that you are analyzing your last year&#39;s worth of exercise data from your fitbit.</description>
     </item>
     
@@ -397,7 +397,7 @@ Imagine that you are analyzing your last year&#39;s worth of exercise data from 
       
       <guid>/about/</guid>
       <description>This is a &amp;ldquo;world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.
-R md b### not runss</description>
+R md b ### not run ss</description>
     </item>
     
   </channel>

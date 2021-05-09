@@ -10,9 +10,12 @@ tags:
   - exploratory_data_analysis
 ---
 
+***
 # Student Opinion Analysis
 
 End-of-semester feedback from students in my "Intro to Data Science" course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you're viewing on a phone, it looks better in landscape. 
+
+**For 
 
 ```{r, message = F, warnings = F, fig.dim = c(8,3), echo = F}
 options(warn=-1)
@@ -21,6 +24,7 @@ options(warn=-1)
 # library(gridExtra)
 # library(ggplot2)
 library(tidyr) 
+library(dplyr)
 # library(RColorBrewer) 
 library(reactable)
 library(htmltools)
@@ -58,11 +62,11 @@ for(y in 1:length(files)){
   results <- data.frame('prompt' = rep(prompts, length(options))[order(rep(prompts, length(options)))]
                         ,'semester' = gsub('.txt','',files[y])
                         ,'sentiment' = rep(options, length(prompts))
-                        ,'count' =NA)
+                        ,'count' =NA) 
   
   for(j in 1:length(options)){
     temp_doc <- doc[grepl(options[j], doc)]
-    counts <- as.numeric(substr(temp_doc,nchar(options[j]) + 6, nchar(options[j]) + 8))
+    counts <- as.numeric(substr(temp_doc,nchar(options[j]) + 3, nchar(options[j]) + 8))
     results$count[results$sentiment == options[j]] <- counts[order(prompts)]
   }
   
@@ -80,9 +84,10 @@ all_results$sentiment <- ifelse(all_results$sentiment=='Strongly disagree', 'SD'
                                        ifelse(all_results$sentiment=='Neutral', 'N',
                                               ifelse(all_results$sentiment=='Agree', 'A',
                                                      ifelse(all_results$sentiment=='Strongly agree', 'SA', NA)))))
+
 all_results$sentiment <- factor(all_results$sentiment, levels = c('SD','D','N','A','SA'))
 
-df_opinion <- spread(all_results, sentiment, count)
+df_opinion <- spread(all_results, sentiment, count) %>% arrange(desc(semester))
         
 reactable(df_opinion
           , groupBy = "prompt"
@@ -94,7 +99,7 @@ reactable(df_opinion
           )
           , columns = list(
                 prompt = colDef(align = "left")
-                ,semester = colDef(maxWidth = 90)
+                ,semester = colDef(maxWidth = 100)
                 ,SD = colDef(aggregate = 'sum',
                              maxWidth = 50,
                              cell = function(value, index) {
