@@ -39,15 +39,6 @@
     </item>
     
     <item>
-      <title>finance</title>
-      <link>/tags/finance/</link>
-      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/finance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>scripting</title>
       <link>/tags/scripting/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
@@ -66,11 +57,11 @@
     </item>
     
     <item>
-      <title>time_series</title>
-      <link>/tags/time_series/</link>
-      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
+      <title>finance</title>
+      <link>/tags/finance/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>/tags/time_series/</guid>
+      <guid>/tags/finance/</guid>
       <description></description>
     </item>
     

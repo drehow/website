@@ -31,22 +31,13 @@ refresher on euclidean distance</description>
     </item>
     
     <item>
-      <title>Randomness is the Stock Market</title>
-      <link>/2021/05/06/randomness-is-the-stock-market/</link>
-      <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/2021/05/06/randomness-is-the-stock-market/</guid>
-      <description>Stock markets behave in opposite ways depending on whether you&#39;re perspective is micro- or macroscopic. It&#39;s easy to forecast that our economy will be bigger in the distant future than it is now, but difficult to estimate where it will be in a month. As a result, it&#39;s harder to trade profitable options than it is to make profitable long-term trades in index funds. This article explores the different levels of randomness you get from highly observed stock indexes depending on the length of time under scrutiny.</description>
-    </item>
-    
-    <item>
       <title>Student Opinion Survey Analysis</title>
       <link>/2021/05/06/student-opinion-survey-analysis/</link>
       <pubDate>Thu, 06 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/06/student-opinion-survey-analysis/</guid>
       <description>Student Opinion Analysis End-of-semester feedback from students in my &amp;quot;Intro to Data Science&amp;quot; course at ORU. The responses are voluntary and anonymous, and I usually incentivize completion with extra credit, but I still have only gotten around a 70% completion rate since starting the course (about 18 total submissions). If you&#39;re viewing on a phone, it looks better in landscape.
- {&#34;x&#34;:{&#34;tag&#34;:{&#34;name&#34;:&#34;Reactable&#34;,&#34;attribs&#34;:{&#34;data&#34;:{&#34;prompt&#34;:[&#34;Exams and other means of measuring my performance were relevant to course objectives and course content.</description>
+Here&#39;s the script for this table.</description>
     </item>
     
     <item>
@@ -66,7 +57,7 @@ use the sos data as an example, maybe grab an innocuous one from work</descripti
       <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
       
       <guid>/2021/05/05/data-science-in-finance/</guid>
-      <description>My Experience of Data Science in Banking My first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model. Looking back, it was a ridiculous ask for my skillset at the time -- just finished a master&#39;s in data science, no finance background, and prepayment modelling is one of the biggest quantitative challenges in the fixed-income industry -- but my boss at least seemed to view the results as more helpful than not, so I moved on.</description>
+      <description>My Experience of Data Science in Banking My first career job in analytics was at a bank. My first project was to try to replicate a white paper on machine learning for mortgage prepayment predictions. After a lot of time and effort, I failed to replicate the model and ended up with what basically amounted to a linear model (read: an extremely oversimplified version of the one in the paper).</description>
     </item>
     
     <item>

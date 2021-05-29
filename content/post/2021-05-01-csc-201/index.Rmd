@@ -7,4 +7,11 @@ categories: []
 tags: []
 ---
 
-Links to lecture notes and apps, maybe tools for the labs and projects?
+[Course Description](link)
+
+[Schedule](link)
+
+[Articles](link)
+
+[Web Apps](link2)
+

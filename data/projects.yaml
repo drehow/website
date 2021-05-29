@@ -3,27 +3,27 @@
       {
          "name":"CSC-201",
          "url":"/2021/05/01/csc-201/",
-         "desc":"articles and apps for my class at ORU, \"Intro. to Data Science\""
+         "desc":"supplementary materials for my data science course at ORU"
       },
       {
-         "name":"Paper Trading Tool",
-         "url":"/2021/05/01/paper-trading-tool/",
-         "desc":"historically simulate different portfolio strategies"
+         "name":"Long-term Portfolio Comparisons",
+         "url":"/2021/05/01/long-term-portfolio-comparison/",
+         "desc":"historically simulate and compare different portfolio tunings"
       },
       {
-         "name":"COVID Tracker",
+         "name":"US Coronavirus Heatmap",
          "url":"/2021/05/01/covid-tracker/",
-         "desc":"Because the world needs another one"
+         "desc":"flip through the days to see where the hottest regions were and are"
       },
       {
          "name":"Personal Financial Reporting Templates",
          "url":"/2021/05/01/personal-financial-reporting-templates/",
-         "desc":"templates and descriptions of my system"
+         "desc":"templates that I use for personal finances"
       },
       {
-         "name":"Puzzles",
+         "name":"Jigsaw Puzzles",
          "url":"/2021/05/01/puzzles/",
-         "desc":"the real reason you're all here"
+         "desc":"my most important portfolio"
       }
    ]
 } 

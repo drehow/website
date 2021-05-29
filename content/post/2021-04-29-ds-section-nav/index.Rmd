@@ -9,9 +9,7 @@ tags:
   - data_science
 ---
 
-Here is a list of my data science articles in the order I would present them to someone who is unfamiliar with data science.
-
-## Data Science Articles
+Need to organize these at some point
 
   * **[Data Literacy](/2021/04/25/data-literacy/)** - discussing aspects of data and digital information in general
   * **[Visualizing Data](/tags/)** - how to convey quantitative information
